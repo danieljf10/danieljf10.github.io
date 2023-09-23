@@ -1,0 +1,118 @@
+body {
+    background-image: url('../imgs/metal_background.jpg');
+    margin: 0px;
+    user-select: none;
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    filter: drop-shadow(0 0 0.75rem #d50000);
+}
+
+.title_class {
+    display: flex;
+    justify-content: center;
+    font-family: 'Black Ops One';
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(116, 116, 116);
+}  
+
+.dsc_link {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: white;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: white;
+   }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-family: 'Bebas Neue', sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #d50000;
+    color: white;
+  }
+
+  .box {
+    height: 1vh;
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+    animation: animate 10s ease infinite;
+    position: absolute;
+    z-index: 1;
+  }
+
+  @keyframes animate {
+    0%{
+        background-color:#1a12ff;
+    }
+    50% {
+        background-color: rgb(255, 51, 51);
+    }
+    100% {
+        background-color: #1a12ff;
+    }
+  }
+
+  #infoo {
+    position: absolute;
+    right: 0px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  #infoo:hover {
+    position: absolute;
+    right: 0px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  #cr {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 2%;
+  }
+
+.downloadMessage {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    margin-top: 3%;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+
