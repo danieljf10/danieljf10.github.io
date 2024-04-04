@@ -125,15 +125,15 @@
 
         const mediaContainer = document.getElementById("mediaId");
         if(secondButtonState){ // for each element, style with matrix color scheme
-            mediaContainer.style.border = "2px solid green";
-            nav.style.borderBottom = "2px solid green";
+            mediaContainer.style.border = "2px solid lightGreen";
+            nav.style.borderBottom = "2px solid lightGreen";
             body.style.backgroundColor = "black";
             links.forEach(function(links){ // for each item selected earlier, style
-                links.style.color = "green";
+                links.style.color = "lightGreen";
             })
     
             texts.forEach(function(texts){
-                texts.style.color = "green";
+                texts.style.color = "lightGreen";
             })
 
             inputs.forEach(function(inputs){
