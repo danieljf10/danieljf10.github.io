@@ -1,0 +1,367 @@
+body {
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+}
+
+#homeBody {
+    margin: 0px;
+    width: 100%;
+    background-image: url(images/photography/IMG_2601_Original_edited.jpg);
+    background-size: 105vw 105vh;
+}
+
+/* NAVIGATION BAR FIX */
+
+#navBarId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #e2e2e2;
+    font-family: impact, fantasy;
+    letter-spacing: 2px;
+    width: auto;
+}
+
+.logoAndName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    width: 200px;
+}
+
+*.navigationLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+ a {
+    color: #e2e2e2;
+    font-size: 18px;
+    text-decoration: none;
+ }
+
+ #navBarId ul {
+    list-style-type: none;
+ }
+
+ .logoAndName > img {
+    margin-right: 10px;
+ }
+
+ a.active {
+    text-decoration: underline;
+ }
+
+ a:hover {
+    color: rgb(128, 128, 128);
+    text-decoration: wavy;
+ }
+
+ /* SOCIAL MEDIA BAR FIX */
+
+ .socialMediaContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 50px;
+ }
+
+ .socialMediaContainer > div:hover {
+    background-color: rgb(27, 27, 27);
+    border-bottom: 5px solid #e2e2e2;
+ }
+
+
+ /* */
+h1 {
+    font-family: monospace;
+    font-style: oblique;
+    color: #e2e2e2;
+} 
+
+p {
+    font-family: monospace;
+    font-weight: bold;
+    color: #e2e2e2;
+}
+
+/* organizational structure */
+.gridContainer {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.placeHolder {
+    display: flex;
+    justify-content: center;
+}
+
+.titleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.pageChangeArrows {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+/* */
+footer {
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 10%; 
+    bottom: 0; 
+}
+
+/* experience */
+#experienceContainer {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141414;
+    border: 3px solid gray;
+    border-radius: 10px;
+    max-width: 55vh; 
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
+.contentExpBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contentExpBox > h2 {
+    display: flex;
+    justify-content: center;
+    color: #e2e2e2;
+}
+
+.contentExpBox > ul {
+   background-color: #502785;
+   border-radius: 5px;
+   color: #e2e2e2;
+   margin: 5px;
+   padding: 20px;
+}
+
+.contentExpBox > ol {
+    background-color: #502785;
+    border-radius: 5px;
+    color: #e2e2e2;
+    margin: 5px;
+    padding: 20px;
+    padding-left: 30px;
+ }
+
+/* PHOTOGRAPHY */
+.imagesWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+    height: 100vh;
+}
+
+ .imageContainersGrid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "imageNumOne imageNumOne imageNumTwo"
+    "imageNumOne imageNumOne imageNumThree"
+    "imageNumFour imageNumFive imageNumSix"
+    "imageNumSeven imageNumEight imageNumNine";
+    width: 80%;
+ }
+
+ .imageClass {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #imageNumOne {
+    grid-area: imageNumOne;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 0px;
+ }
+
+ #imageNumTwo {
+    grid-area: imageNumTwo;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 0px;
+ }
+
+ #imageNumThree {
+    grid-area: imageNumThree;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 0px;
+ }
+
+ /* CONTACT PAGE */
+#contactInfoId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 20vh;
+}
+
+th, td {
+    font-size: 24px;
+}
+
+/* extra stuff */
+img [alt="imageAlt"]{
+    width: auto;
+}
+
+/* WEBSITE DYNAMIC SERVING */
+
+/* PHONE */
+@media only screen and (max-width: 599px){
+    #homeBody {
+        background-image: url(images/photography/phonebackground.jpg);
+    }
+
+    .logoAndName {
+        display: none;
+    }
+
+    .titleHeader > h1 {
+        text-align: center;
+        font-family: impact, fantasy;
+        font-size: 36px;
+        align-items: center;
+        color: #161a52 ; /* #4f323d  #342128*/
+    }
+
+    .description > p{
+        text-align: center;
+        font-family: impact, fantasy;
+        font-size: 20px;
+        color: #161a52; 
+    }
+
+    #experienceContainer {
+        margin-top: 40%;
+        padding: 10px;
+        
+    }
+
+    #contactInfoId {
+        margin-top: 20%;
+        padding: 10px;
+    }
+
+    #imageNumOne {
+        display: none;
+    }
+    .imageContainersGrid{
+        margin-top: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 900px) and (min-width: 600px){
+    #navBarId {
+        justify-content: space-evenly;
+    }
+
+    .logoAndName > img {
+        display: none;
+    }
+
+    .navigationLinks{
+        padding: 10px;
+    }
+
+    .titleHeader > h1, .description > p  {
+        text-align: center;
+    }
+
+    #imageNumOne {
+        display: none;
+    }
+    .imageContainersGrid{
+        margin-top: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #imageNumOne {
+        display: none;
+    }
+    .imageContainersGrid{
+        margin-top: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (min-width: 901px){
+    
+}
+
+/* DESKTOP DEFAULT (already above previous two media queries)*/
+
+#formId {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#colorChangeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.inputStuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

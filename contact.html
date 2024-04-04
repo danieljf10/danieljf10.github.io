@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Contact</title>
+        <!-- image created by Daniel Flemming -->
+        <link rel="icon" href="./images/photography/image1.jpg">
+        <link rel="stylesheet" href = "style.css">
+    </head>
+    <header>
+        <nav id = "navBarId">
+            <div class = "logoAndName">
+                <!-- image created by Daniel Flemming -->
+                <img src="./images/photography/image1.jpg" alt="icon" width="75px">
+                <h2>Daniel Flemming</h2>
+            </div>
+
+            <ul class="navigationLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <body>
+        <main>
+            <br>
+            <div class = "socialMediaContainer" id = "mediaId">
+                <div>
+                    <a href="https://github.com/danieljf10">
+                        <img src="./images/icons/github_icon.png" width ="50" alt="gitLogo">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/daniel-flemming-54344520a/">
+                        <img src="./images/icons/linkedIn_icon.png" width = "50" alt="linkedInLogo">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/dan.jf_">
+                        <img src="./images/icons/insagram_icon.png" width="50" alt="instagramLogo">
+                    </a>
+                </div>
+            </div>
+            
+            <div id="contactInfoId">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><th> Contact Info</th></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <ol value="titleValue">
+                                    <li>Email</li>
+                                    <ul>
+                                        <li>danieljflemming10@gmail.com</li>
+                                        <li>dn426420@dal.ca</li>
+                                    </ul>
+                                    <br>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <form id="formId">
+                <h2>Send me a message!</h2>
+
+                <div class="inputStuff">
+                    <label for ="inputName">Your Name</label>
+                    <input type = "text" id="inputName">
+                </div>
+
+                <div class="inputStuff">
+                    <label for ="inputEmail">Email (Must be @gmail.com)</label>
+                    <input type = "email" id="inputEmail">
+                </div>
+
+                <div class="inputStuff">
+                    <label for="inputTelephone">Phone Number</label>
+                    <input type = "tel" id="inputTelephone">
+                </div>
+
+                <div class="inputStuff">
+                    <label for="inputMessage">Please enter a message to send below</label>
+                    <br>
+                    <textarea id="inputMessage"></textarea>
+                </div>
+
+                <div class="inputStuff">
+                    <label for="inputAgreement">Receive updates or newsletters from us: </label>
+                    <input type="checkbox" id="inputAgreement">
+                </div>
+
+                <button id="submitButtonId">Submit</button>
+
+                <div id="outputAreaId">
+                    []
+                </div>
+            </form> 
+
+            <div id="colorChangeContainer">
+                <label for = "lightDarkModeButton">Change Current Page Theme:</label>
+                <button onclick = lightDarkModeCSS() id="lightDarkModeButton">Light/Dark Mode</button>
+                <button onclick = matrixMode() id="defaultModeButton">Matrix Mode</button>
+                
+            </div>
+
+        </main>
+        <footer>
+            <hr>
+            <p>Created & Designed by Daniel Flemming</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
